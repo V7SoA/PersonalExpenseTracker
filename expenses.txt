@@ -1,0 +1,3 @@
+1,2025-10-4,90.0,Dessert,Dessert at Meridian
+2,2025-8-19,85.0,Food,Snack at Cafe!
+3,2025-9-14,150.0,Cosmetics,Gifted the cosmetic to friend
