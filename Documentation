@@ -1,0 +1,62 @@
+1. Project Overview
+The Personal Expense Tracker is a JavaFX-based desktop application designed to help users manage and track their daily expenses.
+It allows users to perform CRUD (Create, Read, Update, Delete) operations on expenses and stores data locally in a file (expenses.txt).
+The application includes category-based expense tracking and a simple aesthetic UI.
+
+2. Assumptions
+•	Expense data is stored locally in a text file (expenses.txt).
+•	Date format must be entered as YYYY-MM-DD.
+•	Categories are optional for expenses.
+•	JavaFX is required to run the application.
+•	Java JDK version 8 or above is required.
+•	User must have JavaFX installed and configured
+
+3. Design Overview
+Classes
+•	Main.java → Contains the JavaFX UI, handles user interaction and navigation between features.
+•	Expense.java → Represents an expense object with attributes: id, amount, date, category, and note.
+•	ExpenseManager.java → Handles CRUD operations and file storage of expenses.
+UI
+•	JavaFX UI with a simple aesthetic design.
+•	Main menu with buttons for: Add Expense, View Expenses, Update Expense, Delete Expense.
+•	Pop-up windows for each operation with appropriate input fields.
+
+4. Features
+Must-Have:
+•	Add Expense (amount, date, category, note)
+•	View Expenses
+•	Update Expense
+•	Delete Expense
+•	Save expenses in expenses.txt
+•	Basic validation & error handling
+Good-to-Have:
+•	Category-wise expense tracking
+•	Summary reports
+•	Aesthetic JavaFX UI
+
+5. How CRUD Works
+Add Expense:
+•	Opens a pop-up where the user enters amount, date, category, and note.
+•	Generates a unique ID for the expense.
+•	Saves expense in expenses.txt.
+View Expenses:
+•	Displays all expenses stored in expenses.txt in a table-like format.
+Update Expense:
+•	Prompts user for the expense ID.
+•	Allows editing of amount, date, category, and note.
+•	Saves updated expense to file.
+Delete Expense:
+•	Prompts user for the expense ID.
+•	Deletes expense from list and file.
+
+6. Sample Input/Output
+Input:
+Add Expense:
+Amount: 500
+Date: 2025-10-05
+Category: Food
+Note: Lunch
+
+Output:
+ID | Date       | Amount | Category | Note
+1  | 2025-10-05 | 500.0  | Food     | Lunch
